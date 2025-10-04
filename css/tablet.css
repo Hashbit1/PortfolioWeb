@@ -1,0 +1,12 @@
+body { font-size: 18px; }
+.site-title { font-size: 2rem; }
+.nav-list li {display: inline-block; margin-right: 14px;}
+.nav-list a { font-size: 18px; }
+.container { width: 90%; margin: 0 auto; max-width: 1024px; }
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin: 0 1% 16px 1%;
+}
+article {padding: 1.2rem;} 

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me - Hashim Khan</title>
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hashim Khan</h1>
+      <nav aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Hashim Khan</strong>. I'm a second-year student at Ontario Tech University,
+        studying Networking and IT Security. I enjoy learning about computers, networks, and
+        solving real world technology problems.
+      </p>
+      <figure>
+        <img src="Images/me.jpg" alt="Photo of Hashim Khan">
+        <figcaption>Hashim Khan</figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <h3>Intro Video</h3>
+
+      <video controls poster= "assets/me-poster.jpg" style="width:100%; height:auto; border-radius:12px;">
+        <source src="Video/VidA1.mp4" type="video/mp4">
+        Your browser does not support the video.
+      </video>
+      <p style="margin-top:8px;">
+        This video introduces me, my studies, and what I hope to build in the future.
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hashim Khan •
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

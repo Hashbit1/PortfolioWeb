@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Hashim Khan</title>
+
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hashim Khan</h1>
+      <nav aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>My Projects</h2>
+
+    <section>
+      <article class="card">
+        <h3>Networking Lab - Wireshark</h3>
+        <p>
+        learned how routers send traffic and whats the differnece between (manual) static routes and (automatic) dynamic routing prococols
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Networking Lab - Static vs Dynamic Routing</h3>
+        <p>
+        learned how routers send traffic and whats the differnece between (manual) static routes and (automatic) dynamic routing prococols.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>HTML/CSS Portfolio Site</h3>
+        <p>
+         I developed a profolio about me using HTML5 and CSS
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Python Tkinter GUI Calculator</h3>
+        <p>
+        I Created a functional GUI calculator in Python using the Tkinter library
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hashim Khan •
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

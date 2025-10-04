@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hashim Khan - Portfolio</title>
+
+  <!-- shared + responsive styles -->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hashim Khan</h1>
+      <nav aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article>
+      <h2>Welcome to Hashim's Portfolio</h2>
+      <p>
+        Hello, I'm <strong>Hashim Khan</strong>. I'm a second-year student at Ontario Tech University,
+        studying Networking and IT Security. Look around and learn about me.
+      </p>
+      <p>Thank you for visiting my portfolio!</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hashim Khan •
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

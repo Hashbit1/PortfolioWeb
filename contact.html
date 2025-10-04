@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Hashim Khan</title>
+
+  <!-- shared + responsive styles -->
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 599px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Hashim Khan</h1>
+      <nav aria-label="Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <h2>Contact Me</h2>
+      <!-- Client-side validation only -->
+      <form id="contact-form" action="#" method="post" novalidate>
+        <label for="name">Name *</label>
+        <input id="name" name="name" type="text" required maxlength="80" placeholder="Your full name">
+
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com">
+
+        <label for="phone">Cell No. *</label>
+    
+        <input id="phone" name="phone" type="tel" required
+               pattern="^[0-9]{10}$"
+               placeholder="10 digits, e.g., 4165551234">
+
+        <label for="comments">Comments *</label>
+        <textarea id="comments" name="comments" required maxlength="1000" placeholder="How can I help?"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p style="opacity:.8;margin-top:.5rem;">All fields marked * are required.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Hashim Khan •
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

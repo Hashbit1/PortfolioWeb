@@ -1,0 +1,12 @@
+
+body { font-size: 16px; }
+.site-title { font-size: 2.0rem; }
+.nav-list li {display: block; margin: 8px 0;}
+.nav-list a { font-size: 16px; }
+.container { width: 90%; }
+.card {
+  display: block;
+  width: 100%;
+  margin: 0 0 16px 0;
+}
+article{padding: 1rem} 
