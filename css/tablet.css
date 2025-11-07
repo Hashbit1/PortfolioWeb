@@ -1,12 +1,14 @@
-body { font-size: 18px; }
-.site-title { font-size: 2rem; }
-.nav-list li {display: inline-block; margin-right: 14px;}
+body { font-size: 18px; } /*Adjusts base font size for tablets*/
+.site-title { font-size: 2rem; } /*Medium-sized site title*/
+.nav-list li {display: inline-block; margin-right: 14px;} /*Slightly increased spacing*/
 .nav-list a { font-size: 18px; }
 .container { width: 90%; margin: 0 auto; max-width: 1024px; }
+/* Card styles for tablet layout */
 .card {
-  display: inline-block;
+  display: inline-block; /*Keeps cards side by side*/
   vertical-align: top;
   width: 48%;
   margin: 0 1% 16px 1%;
 }
+/* Padding for articles */
 article {padding: 1.2rem;} 

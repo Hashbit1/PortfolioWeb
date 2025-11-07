@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Metadata -->
+  <meta charset="utf-8" />   <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> <!-- Responsive on all devices -->
   <title>About Me - Hashim Khan</title>
 
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 599px)">
   <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 600px) and (max-width: 1023px)">
@@ -12,11 +14,14 @@
 </head>
 <body>
 
+  <!-- Site Header -->
   <header class="site-header">
     <div class="container">
       <h1 class="site-title">Hashim Khan</h1>
+
+      <!-- Navigation Menu -->
       <nav aria-label="Navigation">
-        <ul class="nav-list">
+        <ul class="nav-list"> <!-- Navigation Links -->
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html" aria-current="page">About Me</a></li>
           <li><a href="projects.html">Projects</a></li>
@@ -26,6 +31,7 @@
     </div>
   </header>
 
+  <!-- Main page -->
   <main class="container">
     <article class="card">
       <h2>About Me</h2>
@@ -34,34 +40,41 @@
         studying Networking and IT Security. I enjoy learning about computers, networks, and
         solving real world technology problems.
       </p>
+      <!-- Photo -->
       <figure>
         <img src="Images/me.jpg" alt="Photo of Hashim Khan">
         <figcaption>Hashim Khan</figcaption>
       </figure>
     </article>
 
+    <!-- Intro Video -->
     <article class="card">
       <h3>Intro Video</h3>
 
-      <video controls poster= "assets/me-poster.jpg" style="width:100%; height:auto; border-radius:12px;">
-        <source src="Video/VidA1.mp4" type="video/mp4">
+      <!-- Video with poster image -->
+      <video controls poster= "assets/me-poster.jpg" style="width:100%; height:auto; border-radius:12px;"> <!-- Video element with controls and poster image -->
+        <source src="Video/VidA1.mp4" type="video/mp4"> <!-- Video source -->
         Your browser does not support the video.
       </video>
+      <!--small pargraph below video-->
       <p style="margin-top:8px;">
         This video introduces me, my studies, and what I hope to build in the future.
       </p>
     </article>
   </main>
 
+
+  <!--foter section-->
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Hashim Khan •
-        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+      <p>© <span id="year"></span> Hashim Khan • <!-- Current year will be inserted here -->
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a> <!-- Email link -->
       </p>
     </div>
   </footer>
 
   <script>
+    // JavaScript to set the current year in the footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

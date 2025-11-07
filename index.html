@@ -13,10 +13,11 @@
 </head>
 <body>
 
-  <header class="site-header">
+  <!-- Site Header -->
+  <header class="site-header"> 
     <div class="container">
       <h1 class="site-title">Hashim Khan</h1>
-      <nav aria-label="Navigation">
+      <nav aria-label="Navigation"> <!-- Navigation Menu -->
         <ul class="nav-list">
           <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -27,6 +28,7 @@
     </div>
   </header>
 
+  <!-- Main Content -->
   <main class="container">
     <article>
       <h2>Welcome to Hashim's Portfolio</h2>
@@ -38,6 +40,7 @@
     </article>
   </main>
 
+  <!-- Site Footer -->
   <footer class="site-footer">
     <div class="container">
       <p>© <span id="year"></span> Hashim Khan •
@@ -46,6 +49,7 @@
     </div>
   </footer>
 
+  <!-- JavaScript to set current year in footer -->
   <script>
     
     document.getElementById('year').textContent = new Date().getFullYear();

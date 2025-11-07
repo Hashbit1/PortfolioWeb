@@ -1,23 +1,24 @@
-:root{
+:root{ /* CSS Variables for color theming */
   --brand: #2563eb;
   --brand-2: #9333ea;
 }
 
+/* Reset and base styles */
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; height: 100%; }
 body {
   background: #0f172a;
   color: #ffffff;
   font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.6;   /*Imporoves readibility*/
 }
-
+/* Centers the content */
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1100px; 
   margin: 0 auto;
 }
-
+ /*The Top Bar*/
 .site-header{
   background: linear-gradient(135deg, var(--brand), var(--brand-2));
   color: #fff;
@@ -25,31 +26,39 @@ body {
   margin-bottom: 2rem;
   padding: 1rem 0 0.75rem;
 }
-
+/*The tittle in the Top Bar*/
 .site-title{
   margin: 0 0 0.5rem 0;
   font-size: 1.6rem;
 }
+/*Nav bar */
+.nav-list{ list-style: none;  /*Removes bullets*/
+  margin: 0; 
+  padding: 0; }
 
-.nav-list{ list-style: none; margin: 0; padding: 0; }
-.nav-list li{ display: inline-block; margin-right: 1rem; }
+.nav-list li{ display: inline-block; /*Horizontal layout*/
+margin-right: 1rem; } /*Spacing between items*/
 
+/*Links in the Nav bar*/
 .nav-list a{
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none; /*Removes underline*/
   padding: 8px 10px;
-  border-radius: 6px;
-  border-bottom: 2px solid transparent;
+  border-radius: 6px; /*Rounded corners*/
+  border-bottom: 2px solid transparent;/*invisible border for active state*/
 }
+/*Hover and focus states for links*/
 .nav-list a:hover,
 .nav-list a:focus{ background: rgba(255,255,255,.15); }
 
+/*Active state for current page link*/
 .nav-list a[aria-current="page"]{
   background: rgba(0,0,0,.22);
   font-weight: 600;
   border-bottom-color: #ffffff;
 }
 
+/* Cards and articles styling content blocks*/
 .card,
 article{
   background: #1f2937;
@@ -58,54 +67,58 @@ article{
   padding: 1rem;
   margin: 0 0 1rem 0;
 }
-.card h3, article h3{ margin-top: 0; }
+.card h3, article h3{ margin-top: 0; } /*Removes top margin for headings inside cards/articles*/
 
+/* Buttons and call-to-action styles*/
 button[type="submit"],
 .btn,
 .cta{
-  display: inline-block;
-  padding: 0.7rem 1.2rem;
+  display: inline-block; /*Allows setting width and height*/
+  padding: 0.7rem 1.2rem; /*Increases padding*/
   border: 1px solid transparent;
   border-radius: 10px;
-  background: linear-gradient(90deg, var(--brand), #1d4ed8);
+  background: linear-gradient(90deg, var(--brand), #1d4ed8); /*Gradient background*/
   color: #fff;
-  font-weight: 700;
-  text-decoration: none;
-  cursor: pointer;
+  font-weight: 700; /*Bold text*/
+  text-decoration: none; /*Removes underline*/
+  cursor: pointer; /*Pointer cursor on hover*/
 }
+/* Hover effect for buttons and CTAs */
 .btn:hover, .cta:hover, button[type="submit"]:hover{
   filter: brightness(1.1);
 }
 
 img, video{
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /*Responsive images and videos*/
+  height: auto;/*Maintain aspect ratio*/
   border-radius: 10px;
   display: block;
 }
-
+/* Footer styles */
 .site-footer{
   border-top: 1px solid rgba(255,255,255,0.15);
   background: #0f172a;
   color: #ffffff;
   padding: 1rem 0;
-  opacity: .95;
+  opacity: .95; /*Slightly transparent*/
 }
-.site-footer a{ color: #cfe3ff; }
+/* Footer links */
+.site-footer a{ color: #cfe3ff; } 
 .site-footer a:hover{ text-decoration: underline; }
 
+/*Heading styles*/
 h1, h2, h3{
   color: #ffffff;
-  margin-top: 0.2rem;
+  margin-top: 0.2rem; /*Reduces top margin*/
 }
 
 .contact-form label{
-  display: block;
-  margin-top: 1rem;
+  display: block; /*puts each label on its own line*/
+  margin-top: 1rem; /*Spacing above each label*/
 }
-
+/* Styles for input fields and textarea */
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea{ /*Full width inputs*/
   width: 100%;
   padding: 0.5rem;
   margin-top: 0.3rem;
@@ -115,4 +128,4 @@ h1, h2, h3{
   color: #ffffff;
   font-size: 1rem;
 }
-.contact-form textarea{ resize: vertical; }
+.contact-form textarea{ resize: vertical; } /*Allows vertical resizing */

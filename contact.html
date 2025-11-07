@@ -12,11 +12,12 @@
   <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
 </head>
 <body>
-
+ 
+  <!-- Site Header -->
   <header class="site-header">
-    <div class="container">
+    <div class="container"> <!-- Container for header content -->
       <h1 class="site-title">Hashim Khan</h1>
-      <nav aria-label="Navigation">
+      <nav aria-label="Navigation"> <!-- Navigation menu with ARIA label -->
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -31,9 +32,9 @@
     <article class="card">
       <h2>Contact Me</h2>
       <!-- Client-side validation only -->
-      <form id="contact-form" action="#" method="post" novalidate>
+      <form id="contact-form" action="#" method="post" novalidate> <!-- Form with client-side validation disabled -->
         <label for="name">Name *</label>
-        <input id="name" name="name" type="text" required maxlength="80" placeholder="Your full name">
+        <input id="name" name="name" type="text" required maxlength="80" placeholder="Your full name"> <!-- Name input -->
 
         <label for="email">Email *</label>
         <input id="email" name="email" type="email" required placeholder="you@example.com">
@@ -45,7 +46,7 @@
                placeholder="10 digits, e.g., 4165551234">
 
         <label for="comments">Comments *</label>
-        <textarea id="comments" name="comments" required maxlength="1000" placeholder="How can I help?"></textarea>
+        <textarea id="comments" name="comments" required maxlength="1000" placeholder="How can I help?"></textarea> <!-- Comments textarea -->
 
         <button type="submit">Submit</button>
       </form>
@@ -53,15 +54,18 @@
     </article>
   </main>
 
+  <!-- Footer Section -->
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Hashim Khan •
-        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a>
+    <div class="container"> <!-- Container for footer content -->
+      <p>© <span id="year"></span> Hashim Khan • <!-- Current year will be inserted here -->
+        <a href="mailto:hashim.khan1@ontariotechu.net">hashim.khan1@ontariotechu.net</a> <!-- Email link -->
       </p>
     </div>
   </footer>
 
+   <!-- JavaScript to set the current year in the footer -->
   <script>
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>

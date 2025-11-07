@@ -1,12 +1,14 @@
-
+/* Mobile specific styles */
 body { font-size: 16px; }
-.site-title { font-size: 2.0rem; }
-.nav-list li {display: block; margin: 8px 0;}
-.nav-list a { font-size: 16px; }
+.site-title { font-size: 2.0rem; } /*Smaller site title*/
+.nav-list li {display: block; margin: 8px 0;} /*Stacked nav items*/
+.nav-list a { font-size: 16px; } /*Smaller nav links for mobile*/
 .container { width: 90%; }
+/* Card styles for mobile layout */
 .card {
   display: block;
   width: 100%;
   margin: 0 0 16px 0;
 }
+/* Padding for articles */
 article{padding: 1rem} 
